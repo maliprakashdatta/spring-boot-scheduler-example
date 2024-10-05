@@ -34,3 +34,18 @@ mvn clean spring-boot:run
 	<artifactId>spring-boot-starter</artifactId>
 </dependency>
 ```
+# Configuration
+The main configuration is in src/main/resources/application.properties:
+```shell
+spring.application.name=spring-boot-scheduler-example
+# Logging
+logging.level.org.springframework=INFO
+logging.level.com.example=DEBUG
+
+# Server
+server.port=8090
+
+# Custom scheduler properties
+fixedDelay.in.millis
+You can modify the fixedDelay.in.milliseconds value to change the delay for the fixed delay task.
+```
