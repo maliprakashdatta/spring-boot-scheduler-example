@@ -70,3 +70,21 @@ Explanation of @Scheduled(cron = "0 0 10 * * *"):
 @Scheduled(fixedDelay = X): Runs the task after a delay of X milliseconds from the last completion.<br>
 @Scheduled(cron = "expression"): Runs the task based on a cron expression.<br>
 @Scheduled(initialDelay = X): Sets an initial delay before the first execution.
+
+## Output
+```shell
+Task executed at 2024-10-06T00:15:05.389139300 on thread pool-2-thread-1
+Fixed delay task executed at 2024-10-06T00:15:05.389139300 on thread pool-2-thread-2
+Task executed at 2024-10-06T00:15:10.374949500 on thread pool-2-thread-1
+Fixed delay task executed at 2024-10-06T00:15:10.405876200 on thread pool-2-thread-2
+Task executed at 2024-10-06T00:15:15.379827100 on thread pool-2-thread-3
+Fixed delay task executed at 2024-10-06T00:15:15.410239200 on thread pool-2-thread-4
+Task executed at 2024-10-06T00:15:20.378581400 on thread pool-2-thread-1
+Fixed delay task executed at 2024-10-06T00:15:20.424507100 on thread pool-2-thread-5
+Task executed at 2024-10-06T00:15:25.374962500 on thread pool-2-thread-2
+Fixed delay task executed at 2024-10-06T00:15:25.436274500 on thread pool-2-thread-3
+Task executed at 2024-10-06T00:15:30.369851100 on thread pool-2-thread-4
+Fixed delay task executed at 2024-10-06T00:15:30.448174600 on thread pool-2-thread-1
+Task executed at 2024-10-06T00:15:35.376235 on thread pool-2-thread-5
+Fixed delay task executed at 2024-10-06T00:15:35.454600700 on thread pool-2-thread-2
+```
