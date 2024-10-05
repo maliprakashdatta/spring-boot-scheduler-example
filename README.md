@@ -52,9 +52,14 @@ You can modify the fixedDelay.in.milliseconds value to change the delay for the 
 Explanation of @Scheduled(cron = "0 0 10 * * *"):
 
 # Scheduling with Cron Expression
-0: second (at 0 second)
-0: minute (at 0 minute)
-10: hour (at 10 AM)
-*: day of the month (every day)
-*: month (every month)
+0: second (at 0 second)<br>
+0: minute (at 0 minute)<br>
+10: hour (at 10 AM)<br>
+*: day of the month (every day)<br>
+*: month (every month)<br>
 *: day of the week (every day of the week)
+
+## You can adjust the cron expression to fit your needs, e.g.:<br>
+
+"0 0/5 * * * *": every 5 minutes<br>
+"0 15 14 * * ?": at 2:15 PM every day
