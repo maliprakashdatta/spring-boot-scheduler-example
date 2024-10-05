@@ -63,3 +63,10 @@ Explanation of @Scheduled(cron = "0 0 10 * * *"):
 
 "0 0/5 * * * *": every 5 minutes<br>
 "0 15 14 * * ?": at 2:15 PM every day
+
+## Key Annotations and Parameters:
+@EnableScheduling: Enables scheduling support in your application.<br>
+@Scheduled(fixedRate = X): Runs the task at a fixed interval of X milliseconds.<br>
+@Scheduled(fixedDelay = X): Runs the task after a delay of X milliseconds from the last completion.<br>
+@Scheduled(cron = "expression"): Runs the task based on a cron expression.<br>
+@Scheduled(initialDelay = X): Sets an initial delay before the first execution.
