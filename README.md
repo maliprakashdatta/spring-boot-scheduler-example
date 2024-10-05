@@ -34,24 +34,24 @@ mvn clean spring-boot:run
 	<artifactId>spring-boot-starter</artifactId>
 </dependency>
 ```
-# Configuration
+## Configuration
 The main configuration is in src/main/resources/application.properties:
 ```shell
 spring.application.name=spring-boot-scheduler-example
-# Logging
+###Logging
 logging.level.org.springframework=INFO
 logging.level.com.example=DEBUG
 
-# Server
+### Server
 server.port=8090
 
-# Custom scheduler properties
+### Custom scheduler properties
 fixedDelay.in.millis
 You can modify the fixedDelay.in.milliseconds value to change the delay for the fixed delay task.
 ```
 Explanation of @Scheduled(cron = "0 0 10 * * *"):
 
-# Scheduling with Cron Expression
+## Scheduling with Cron Expression
 0: second (at 0 second)<br>
 0: minute (at 0 minute)<br>
 10: hour (at 10 AM)<br>
@@ -59,7 +59,7 @@ Explanation of @Scheduled(cron = "0 0 10 * * *"):
 *: month (every month)<br>
 *: day of the week (every day of the week)
 
-## You can adjust the cron expression to fit your needs, e.g.:<br>
+### You can adjust the cron expression to fit your needs, e.g.:<br>
 
 "0 0/5 * * * *": every 5 minutes<br>
 "0 15 14 * * ?": at 2:15 PM every day
