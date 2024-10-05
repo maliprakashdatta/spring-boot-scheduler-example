@@ -49,3 +49,12 @@ server.port=8090
 fixedDelay.in.millis
 You can modify the fixedDelay.in.milliseconds value to change the delay for the fixed delay task.
 ```
+Explanation of @Scheduled(cron = "0 0 10 * * *"):
+
+# Scheduling with Cron Expression
+0: second (at 0 second)
+0: minute (at 0 minute)
+10: hour (at 10 AM)
+*: day of the month (every day)
+*: month (every month)
+*: day of the week (every day of the week)
